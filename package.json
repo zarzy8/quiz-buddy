@@ -1,7 +1,7 @@
 {
-  "name": "dsh-skill-review-quiz",
-  "version": "0.1.0",
-  "description": "Review-material and question-bank quiz skill for DeepSeek Harness: summarize, generate questions, or run an interactive quiz session.",
+  "name": "dsh-skill-quiz-buddy",
+  "version": "0.1.1",
+  "description": "Quiz Buddy for DeepSeek Harness: turn a document, your own question bank or a review PDF into single-choice, multiple-choice and true/false questions, then quiz you and report your mistakes.",
   "type": "module",
   "main": "index.js",
   "engines": {
