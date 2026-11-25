@@ -1,5 +1,5 @@
 # dsh bundle patch: inserts this plugin into a profile's layer stack.
 - insert:
-    - id: review-quiz-skills
-      name: 'dsh-skill-review-quiz'
+    - id: quiz-buddy-skills
+      name: 'dsh-skill-quiz-buddy'
       config: {}
