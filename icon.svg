@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Review quiz">
+  <rect x="8" y="10" width="112" height="108" rx="18" fill="#f4f6fb" stroke="#c9d2e3" stroke-width="3"/>
+  <g fill="none" stroke="#4c6ef5" stroke-width="4">
+    <circle cx="36" cy="38" r="10"/>
+    <circle cx="36" cy="66" r="10"/>
+    <circle cx="36" cy="94" r="10"/>
+  </g>
+  <g fill="#4c6ef5" font-family="Segoe UI, system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">
+    <text x="36" y="42.5">A</text>
+    <text x="36" y="70.5">B</text>
+    <text x="36" y="98.5">C</text>
+  </g>
+  <g fill="#c9d2e3">
+    <rect x="56" y="34" width="46" height="8" rx="4"/>
+    <rect x="56" y="62" width="38" height="8" rx="4"/>
+    <rect x="56" y="90" width="42" height="8" rx="4"/>
+  </g>
+  <g>
+    <circle cx="101" cy="27" r="17" fill="#12b76a"/>
+    <path d="M93 27.5l5.5 5.5L109 21" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
