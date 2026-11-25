@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Review quiz",
-    "description": "Point it at a study file: notes become a summary plus a quiz, question banks become a live quiz session. Answer one question at a time in a card or a standalone window, then get totals, mistakes, accuracy, and the explanation for every wrong answer."
+    "title": "Quiz Buddy",
+    "description": "Point it at a document and it turns it into questions. Works with your own question banks as well as ordinary review material. This version generates single-choice, multiple-choice and true/false questions only, then reports the total questions, mistakes, accuracy, and the explanation for every wrong answer."
   }
 }
