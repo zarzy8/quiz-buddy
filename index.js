@@ -1,17 +1,17 @@
-// dsh-skill-review-quiz — ships the `review-quiz` skill as a bundled skill provider.
+// dsh-skill-quiz-buddy — ships the `quiz-buddy` skill as a bundled skill provider.
 //
-// The bundle carries the skill body and its resource files under assets/review-quiz/;
+// The bundle carries the skill body and its resource files under assets/quiz-buddy/;
 // this plugin registers them on the skill registry so they appear in the session
 // catalog next to the user's own local skills.
 import { readFile } from 'node:fs/promises'
 import { join, sep } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-export const name = 'review-quiz-skills'
+export const name = 'quiz-buddy-skills'
 export const inject = ['skills']
 
-const PROVIDER = 'dsh-review-quiz'
-const SKILL_NAMES = ['review-quiz']
+const PROVIDER = 'dsh-quiz-buddy'
+const SKILL_NAMES = ['quiz-buddy']
 // Bundled skills rank below project and user roots (100-500), so a user's own copy wins.
 const SKILL_RANK = 600
 
@@ -66,7 +66,7 @@ function persistentReadFailure(error) {
 }
 
 /**
- * Register the bundled `review-quiz` skill. The skill file is read on catalog
+ * Register the bundled `quiz-buddy` skill. The skill file is read on catalog
  * discovery and again on every load, so editing the file needs no rebuild.
  * @param ctx - Context carrying the skill registry.
  */
