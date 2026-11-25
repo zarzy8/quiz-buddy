@@ -1,0 +1,74 @@
+{
+  "componentName": "Page",
+  "state": {
+    "result": { "total": 10, "answered": 10, "wrong": 3, "accuracy": "70%" },
+    "wrongList": [
+      {
+        "no": "3",
+        "stem": "下列对文化描述错误的是：",
+        "yours": "A",
+        "answer": "D",
+        "explain": "文化既包括物质产品，也包括精神产品，D 把文化缩小为精神产品。"
+      }
+    ]
+  },
+  "methods": {
+    "retryWrong": {
+      "type": "JSFunction",
+      "value": "function retryWrong() { this.callAction('continueChat', { message: '只刷错题' }); }"
+    }
+  },
+  "children": [
+    {
+      "componentName": "TinyCard",
+      "children": [
+        {
+          "componentName": "Text",
+          "props": {
+            "style": "font-size:16px;font-weight:600;display:block;margin-bottom:12px;",
+            "text": "本轮测验结果"
+          }
+        },
+        {
+          "componentName": "Text",
+          "props": {
+            "style": "font-size:14px;line-height:2;display:block;",
+            "text": {
+              "type": "JSExpression",
+              "value": "'总题数：' + this.state.result.total + '　错题数：' + this.state.result.wrong + '　准确率：' + this.state.result.accuracy + '（已答 ' + this.state.result.answered + ' / 共 ' + this.state.result.total + '）'"
+            }
+          }
+        },
+        {
+          "componentName": "Text",
+          "props": {
+            "style": "font-size:14px;font-weight:600;display:block;margin:16px 0 8px;",
+            "text": "错题清单"
+          }
+        },
+        {
+          "componentName": "TinyGrid",
+          "props": {
+            "columns": [
+              { "field": "no", "title": "题号", "width": 60 },
+              { "field": "stem", "title": "题目" },
+              { "field": "yours", "title": "你的答案", "width": 90 },
+              { "field": "answer", "title": "正确答案", "width": 90 },
+              { "field": "explain", "title": "解析", "width": 260, "showOverflow": "tooltip" }
+            ],
+            "data": { "type": "JSExpression", "value": "this.state.wrongList" }
+          }
+        },
+        {
+          "componentName": "TinyButton",
+          "props": {
+            "text": "只刷错题",
+            "type": "primary",
+            "style": "margin-top:14px",
+            "onClick": { "type": "JSExpression", "value": "this.retryWrong" }
+          }
+        }
+      ]
+    }
+  ]
+}
