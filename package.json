@@ -1,0 +1,39 @@
+{
+  "name": "dsh-skill-review-quiz",
+  "version": "0.1.0",
+  "description": "Review-material and question-bank quiz skill for DeepSeek Harness: summarize, generate questions, or run an interactive quiz session.",
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "dsh": ">=0.2.0"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "assets",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "skill",
+    "quiz",
+    "study"
+  ],
+  "license": "MIT"
+}
